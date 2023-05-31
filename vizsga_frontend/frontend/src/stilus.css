@@ -1,0 +1,89 @@
+*{box-sizing: border-box;}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: left;
+    font-size: 20px;
+    margin-left: 20px;
+}
+h2{
+    text-align: left;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.col.am{
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+
+
+.col-sm.a{
+    font-weight: bold;
+}
+
+.tartalom{
+    border-top: 1px solid rgba(128, 128, 128, 0.37);
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.container{
+    
+    margin: 0;
+    padding: 0;
+}
+
+.temaSelect{
+    padding-top: 10px;
+    width: 20%;
+}
+
+.row.sorok{
+    margin-left: 10px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+    border-radius: 5px;
+    
+}
+
+.col-sm{
+    margin-top: 5px;
+    text-align: left;
+    margin-bottom: 5px;
+    
+}
+
+#magyar.col-sm.magyar{
+    max-width: 70%;
+    
+}
+
+@media only screen and (max-width: 575px) {
+.row.head{
+    visibility: hidden;
+}
+.temaSelect{
+    padding-top: 10px;
+    width: 80%;
+}
+.row.sorok{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.col-sm.a{
+    padding-left: 15%;
+}
+.col-sm.jel{
+    padding-left: 15%;
+}
+}
